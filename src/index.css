@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF5F0;
+    color: #2D2424;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+}
+
+/* Custom Utilities for Premium Aesthetics */
+.shadow-rose-soft {
+  box-shadow: 0 10px 30px -5px rgba(244, 63, 94, 0.08), 0 4px 12px -2px rgba(244, 63, 94, 0.04);
+}
+
+.shadow-rose-hover {
+  box-shadow: 0 20px 40px -10px rgba(244, 63, 94, 0.18), 0 8px 16px -4px rgba(244, 63, 94, 0.08);
+}
+
+.border-rose-gold {
+  border-color: rgba(226, 175, 175, 0.4);
+}
+
+.bg-rose-gold-gradient {
+  background: linear-gradient(135deg, #FAF5F0 0%, #FDF2F4 50%, #FCE7F3 100%);
+}
+
+.glass-nav {
+  background: rgba(250, 245, 240, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Hide scrollbar for smooth gallery filters if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
